@@ -10,7 +10,7 @@
 </head>
 	<main>
 		<div class="wrapper">
-			<div class="left">
+			<div class="left" id="left">
 				<section class="_fwfl header">
 					<h1>Steven</h1>
 					<h1>Doe</h1>
@@ -25,38 +25,6 @@
 				</section>
 				<section class="_fwfl contact">
 					<h3 class="_fwfl">Contact</h3>
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
 					<ul class="_fwfl _ls contact-list">
 						<li>
 							<span class="_fwfl">
@@ -85,32 +53,11 @@
 					</ul>
 				</section>
 			</div>
-			<div class="right">
+			<div class="right" id="right">
 				<div class="conner-top-right"></div>
 				<section class="_fwfl content-box">
 					<h3 class="_fwfl"><i class="fa fa-building"></i>Experience</h3>
 					<div class="_fwfl">
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
 						<ul class="_fwfl _ls history-list">
 							<li>
 								<h4>
@@ -128,25 +75,15 @@
 								<span>Supermen</span>
 								<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
 							</li>
+							<li>
+								<h4>
+									<i></i>
+									Colorado Co<span>&nbsp;&#124;&nbsp;03-2012 - 07-2015</span>
+								</h4>
+								<span>Lorem ipsum</span>
+								<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+							</li>
 						</ul>
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
 					</div>
 				</section>
 				<section class="_fwfl content-box">
@@ -213,6 +150,16 @@
 									<i></i>
 								<div>
 							</li>
+							<li>
+								<span>Laravel 5</span>
+								<div class="rate rate-4">
+									<i></i>
+									<i></i>
+									<i></i>
+									<i></i>
+									<i></i>
+								<div>
+							</li>
 						</ul>
 					</div>
 				</section>
@@ -233,6 +180,47 @@
 			</div>
 		</div>
 	</main>
+	<script>
+	
+	function impretty () {
+		var head  		= document.head || document.getElementsByTagName('head')[0];
+		var left  		= document.getElementById('left');
+		var about 		= document.getElementById('about');
+		var style 	    = document.createElement('style');
+		var leftWidth   = left.clientWidth;
+		var rightBorder = leftWidth/2;
+		var leftBorder  = leftWidth/2;
+		
+		style.type = 'text/css';
+		
+		var css = '.header::after {' +
+				'border-right-width: ' + rightBorder + 'px;' +
+				'border-left-width: ' + leftBorder + 'px;';
+					
+		if (style.styleSheet){
+			// This is required for IE8 and below.
+			style.styleSheet.cssText = css;
+		} else {
+			style.appendChild(document.createTextNode(css));
+		}
+		head.appendChild(style);
+	}
+	
+	window.addEventListener( 'resize', impretty, false );
+	
+	window.onload = function(){
+		var left  		= document.getElementById('left');
+		var right		= document.getElementById('right');
+		var leftHeight  = left.offsetHeight;
+		var rightHeight = right.offsetHeight;
+	
+		if (leftHeight < rightHeight && window.width >= 680) {
+			left.style.height = rightHeight + 'px';
+		}
+		
+		impretty();
+	};
+	</script>
 <body>
 	
 </body>

@@ -56,6 +56,7 @@ main {
     height: 0;
 	left: 0;
     top: 100%;
+	margin-top: -1px;
     border-top: solid 70px #ebdd34;
     border-right: 179px solid transparent;
     border-bottom: 0;
@@ -230,6 +231,8 @@ main {
 	float: left;
 	margin-top: 5px;
 	padding-left: 30px;
+	font-style: italic;
+	color: #000;
 }
 .history-list>li>div {
 	width: 100%;
@@ -322,4 +325,82 @@ main {
 }
 .skill-list>li>div.rate-5>i:nth-child(5) {
 	background-color: #ebdd34;
+}
+@media screen and (max-width: 1024px) {
+	main {
+		width: 100%;
+		margin: 0;
+	}
+	.wrapper {
+		min-height: auto;
+		margin: 0;
+		border-radius: 0;
+		box-shadow: none;
+	}
+	.wrapper>.left,
+	.wrapper>.right{
+		min-height: auto;
+	}
+}
+@media screen and (max-width: 768px) {
+	.wrapper>.left {
+		width: 32%;
+	}
+	.wrapper>.right {
+		width: 68%;
+	}
+	.conner-top-right {
+		display: none;
+	}
+	.header {
+		padding: 50px 15px 20px;
+	}
+	.header::after {
+		border-top-width: 55px;
+	}
+	.header h1 {
+		font-size: 36px;
+		margin-bottom: 0;
+	}
+	.avatar img {
+		width: 160px;
+		height: 160px;
+	}
+	.contact {
+		padding: 5px 25px 20px;
+		margin-top: 80px;
+	}
+	.contact-list {
+		margin-top: 25px;
+	}
+	.contact-list>li {
+		margin-bottom: 25px;
+	}
+	.wrapper>.right {
+		padding: 50px 20px 20px;
+	}
+	.skill-list>li {
+		width: 100%;
+		padding: 0 !important;
+	}
+	.skill-list>li>span {
+		width: 50%;
+	}
+	.skill-list>li>div {
+		width: 50%;
+	}
+}
+@media screen and (max-width: 680px) {
+	.wrapper>.left {
+		width: 100%;
+	}
+	.wrapper>.right {
+		width: 100%;
+	}
+	.header::after {
+		border-top-width: 80px;
+	}
+	.contact {
+		margin-top: 100px;
+	}
 }
