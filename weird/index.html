@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>dmm</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/all.css" >
+	<link rel="stylesheet" href="css/style.css" >
+</head>
+	<main>
+		<div class="wrapper">
+			<header class="_fwfl">
+				<div class="left">
+					<h1 class="_fwfl">
+						<span class="since">1992</span>
+						<span class="fullname" id="fullname">Walter White</span>
+					</h1>
+					<span class="_fwfl remember">Remember my name</span>
+				</div>
+				<div class="right">
+					<h6 class="_fwfl">360 Nguyen Cong Tru, District 1, HCM</h6>
+					<span class="_fwfl"><i class="fa fa-phone"></i> 090909878766</span>
+					<span class="_fwfl"><i class="fa fa-envelope"></i> kakarot@yopmail.com</span>
+				</div>
+			</header>
+			<div class="left" id="left">
+				<section class="_fwfl content-box content-left">
+					<h3 class="_fwfl title">Education <i class="fa fa-graduation-cap"></i></h3>
+					<div class="_fwfl content">
+						<div class="_fwfl content-inside">
+							<ul class="_fwfl _ls edu-list">
+								<li>
+									<span class="_fwfl">05/2015 - Current</span>
+									<h5 class="_fwfl"><i>&rarr;</i>Lorem ipsum dolor sit amet</h5>
+									<i class="_fwfl">Ut enim ad minim veniam</i>
+									<div class="_fwfl">Sed ut perspiciatis unde omnis</div>
+								</li>
+								<li>
+									<span class="_fwfl">05/2015 - Current</span>
+									<h5 class="_fwfl"><i>&rarr;</i>Lorem ipsum dolor sit amet</h5>
+									<i class="_fwfl">Ut enim ad minim veniam</i>
+									<div class="_fwfl">Sed ut perspiciatis unde omnis</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="_fwfl content-box content-left">
+					<h3 class="_fwfl title">Skill <i class="fa fa-pencil-ruler"></i></h3>
+					<div class="_fwfl content">
+						<div class="_fwfl content-inside">
+							<ul class="_fwfl _ls skill-list">
+								<li>
+									<h5 class="_fwfl"><i>&rarr;</i>Lorem ipsum dolor</h5>
+									<div class="_fwfl">
+										<span><i class="rate-3"></i></span>
+									</div>
+								</li>
+								<li>
+									<h5 class="_fwfl"><i>&rarr;</i>doloremque laudantium</h5>
+									<div class="_fwfl">
+										<span><i class="rate-4"></i></span>
+									</div>
+								</li>
+								<li>
+									<h5 class="_fwfl"><i>&rarr;</i>quasi architecto</h5>
+									<div class="_fwfl">
+										<span><i class="rate-2"></i></span>
+									</div>
+								</li>
+								<li>
+									<h5 class="_fwfl"><i>&rarr;</i>Nemo enim ipsam voluptatem</h5>
+									<div class="_fwfl">
+										<span><i class="rate-1"></i></span>
+									</div>
+								</li>
+								<li>
+									<h5 class="_fwfl"><i>&rarr;</i>Duis aute</h5>
+									<div class="_fwfl">
+										<span><i class="rate-5"></i></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="right" id="right">
+				<section class="_fwfl content-box content-right">
+					<h3 class="_fwfl title">Experience <i class="fa fa-flask"></i></h3>
+					<div class="_fwfl content">
+						<div class="_fwfl content-inside">
+							<ul class="_fwfl _ls history-list">
+								<li>
+									<span class="_fwfl">05/2015 - Current</span>
+									<h5 class="_fwfl">Lorem ipsum dolor sit amet</h5>
+									<b class="_fwfl">Ut enim ad minim veniam</b>
+									<div class="_fwfl"><i>&#9826;</i>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+								</li>
+								<li>
+									<span class="_fwfl">06/2013 - 05/2015</span>
+									<h5 class="_fwfl">Lorem ipsum dolor sit amet</h5>
+									<b class="_fwfl">Ut enim ad minim veniam</b>
+									<div class="_fwfl"><i>&#9826;</i>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+								</li>
+								<li>
+									<span class="_fwfl">05/2010 - 06/2013</span>
+									<h5 class="_fwfl">Lorem ipsum dolor sit amet</h5>
+									<b class="_fwfl">Ut enim ad minim veniam</b>
+									<div class="_fwfl"><i>&#9826;</i>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</main>
+	<script>
+		function makeMePrety() {
+			var fullname = document.getElementById('fullname');
+			var nameTxt  = fullname.innerHTML;
+			var nameHtml = nameTxt;
+			
+			if (nameTxt.length > 0) {
+				var nameHtml = '<b>' + nameTxt.substring(0, 1) + '</b>' + nameTxt.substring(1, nameTxt.length);
+				fullname.innerHTML = nameHtml;
+			}
+		}
+			
+		window.onload = function(){
+			makeMePrety();
+		};
+	</script>
+<body>
+	
+</body>
+</html>
