@@ -16,26 +16,28 @@
 						<span class="since">1992</span>
 						<span class="fullname" id="fullname">Walter White</span>
 					</h1>
-					<span class="_fwfl remember">Remember my name</span>
+					<span class="_fwfl remember">Super Bug Generator</span>
 				</div>
 				<div class="right">
-					<h6 class="_fwfl">360 Nguyen Cong Tru, District 1, HCM</h6>
+					<h6 class="_fwfl"><i class="fa fa-map-marker"></i> 360 Nguyen Cong Tru, District 1, HCM</h6>
 					<span class="_fwfl"><i class="fa fa-phone"></i> 090909878766</span>
 					<span class="_fwfl"><i class="fa fa-envelope"></i> kakarot@yopmail.com</span>
 				</div>
 			</header>
 			<div class="left" id="left">
+				<section class="_fwfl content-box content-left about-me">
+					<h3 class="_fwfl title">About Me <i class="fa fa-address-card"></i></h3>
+					<div class="_fwfl content">
+						<div class="_fwfl content-inside">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+					</div>
+				</section>
 				<section class="_fwfl content-box content-left">
 					<h3 class="_fwfl title">Education <i class="fa fa-graduation-cap"></i></h3>
 					<div class="_fwfl content">
 						<div class="_fwfl content-inside">
 							<ul class="_fwfl _ls edu-list">
-								<li>
-									<span class="_fwfl">05/2015 - Current</span>
-									<h5 class="_fwfl"><i>&rarr;</i>Lorem ipsum dolor sit amet</h5>
-									<i class="_fwfl">Ut enim ad minim veniam</i>
-									<div class="_fwfl">Sed ut perspiciatis unde omnis</div>
-								</li>
 								<li>
 									<span class="_fwfl">05/2015 - Current</span>
 									<h5 class="_fwfl"><i>&rarr;</i>Lorem ipsum dolor sit amet</h5>
@@ -81,7 +83,27 @@
 										<span><i class="rate-5"></i></span>
 									</div>
 								</li>
+								<li>
+									<h5 class="_fwfl"><i>&rarr;</i>Nemo enim ipsam voluptatem</h5>
+									<div class="_fwfl">
+										<span><i class="rate-1"></i></span>
+									</div>
+								</li>
+								<li>
+									<h5 class="_fwfl"><i>&rarr;</i>Duis aute</h5>
+									<div class="_fwfl">
+										<span><i class="rate-5"></i></span>
+									</div>
+								</li>
 							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="_fwfl content-box content-left">
+					<h3 class="_fwfl title">Hobbies <i class="fa fa-graduation-cap"></i></h3>
+					<div class="_fwfl content">
+						<div class="_fwfl content-inside"  id="leftLastMenStanding">
+							Sed ut perspiciatis, Natus error, voluptatem, doloremque
 						</div>
 					</div>
 				</section>
@@ -90,7 +112,7 @@
 				<section class="_fwfl content-box content-right">
 					<h3 class="_fwfl title">Experience <i class="fa fa-flask"></i></h3>
 					<div class="_fwfl content">
-						<div class="_fwfl content-inside">
+						<div class="_fwfl content-inside" id="rightLastMenStanding">
 							<ul class="_fwfl _ls history-list">
 								<li>
 									<span class="_fwfl">05/2015 - Current</span>
@@ -110,28 +132,89 @@
 									<b class="_fwfl">Ut enim ad minim veniam</b>
 									<div class="_fwfl"><i>&#9826;</i>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
 								</li>
+								<li>
+									<span class="_fwfl">05/2010 - 06/2013</span>
+									<h5 class="_fwfl">Lorem ipsum dolor sit amet</h5>
+									<b class="_fwfl">Ut enim ad minim veniam</b>
+									<div class="_fwfl"><i>&#9826;</i>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+								</li>
 							</ul>
 						</div>
 					</div>
 				</section>
 			</div>
+			<div class="everyday-lloveu">
+				<i class="fa fa-tree tree3"></i>
+				<i class="fa fa-tree tree4"></i>
+				<i class="fa fa-sun"></i>
+				<i class="fa fa-home"></i>
+				<i class="fa fa-walking"></i>
+				<i class="fa fa-heart"></i>
+				<i class="fa fa-music music1"></i>
+				<i class="fa fa-music music2"></i>
+				<i class="fa fa-music music3"></i>
+				<i class="fa fa-building"></i>
+				<i class="fa fa-hotel"></i>
+				<i class="fa fa-building building1"></i>
+				<i class="fa fa-tree"></i>
+				<i class="fa fa-tree tree1"></i>
+				<i class="fa fa-tree tree2"></i>
+				<i class="fa fa-tree tree5"></i>
+				<i class="fa fa-building building2"></i>
+				<i class="fa fa-church"></i>
+				<i class="fa fa-tree tree6"></i>
+				<i class="fa fa-tree tree7"></i>
+				<i class="fa fa-tree tree8"></i>
+				<i class="fa fa-tree tree9"></i>
+				<i class="fa fa-tree tree10"></i>
+				<i class="fa fa-truck"></i>
+				<i class="fa fa-tree tree11"></i>
+				<i class="fa fa-tree tree12"></i>
+				<i class="fa fa-tree tree13"></i>
+				<i class="fa fa-rocket"></i>
+			</div>
 		</div>
 	</main>
 	<script>
 		function makeMePrety() {
+			if (window.innerWidth > 680) {
+				var leftH  = document.getElementById('left').clientHeight;
+				var rightH = document.getElementById('right').clientHeight;
+				var diffH  = 0;
+				
+				if (leftH > rightH) {
+					var rightLast  = document.getElementById('rightLastMenStanding');
+					var rightLastH = rightLast.clientHeight;
+					
+					diffH = (leftH - rightH) + rightLastH;
+					rightLast.style.height = diffH + 'px';
+				} else if (leftH < rightH) {
+					var leftLast  = document.getElementById('leftLastMenStanding');
+					var leftLastH = leftLast.clientHeight;
+					
+					diffH = (rightH - leftH) + leftLastH;
+					leftLast.style.height = diffH + 'px';
+				}
+			}
+		}
+		
+		function nameMeBabe() {
 			var fullname = document.getElementById('fullname');
 			var nameTxt  = fullname.innerHTML;
-			var nameHtml = nameTxt;
 			
 			if (nameTxt.length > 0) {
 				var nameHtml = '<b>' + nameTxt.substring(0, 1) + '</b>' + nameTxt.substring(1, nameTxt.length);
 				fullname.innerHTML = nameHtml;
 			}
 		}
-			
+		
+		window.addEventListener( 'resize', makeMePrety, false );
+		
 		window.onload = function(){
+			nameMeBabe();
 			makeMePrety();
 		};
+		
 	</script>
 <body>
 	
