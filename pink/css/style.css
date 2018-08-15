@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
+._fl {
+	float: left;
+}
+._fwfl {
+	width: 100%;
+	float: left;
+}
+._ls {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Roboto Mono', monospace;
+	background-color: #eee;
+	font-size: 14px;
+	color: #333;
+}
+main {
+	width: 1020px;
+	margin: 0 auto;
+}
+.wrapper {
+	width: 100%;
+	min-height: 1320px;
+	float: left;
+	margin-top: 100px;
+	margin-bottom: 40px;
+	background-color: #fffafa;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.09);
+	-webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.09);
+	position: relative;
+}
+.wrapper:before {
+	content: "";
+	width: 100%;
+	height: 10px;
+	float: left;
+	background-color: #fa3f73;
+}
+.wrapper:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 10px;
+	top: 100%;
+	left: 0;
+	margin-top: -5px;
+	background-color: #fa3f73;
+}
+header {
+	margin-top: 120px;
+	padding: 0 20px;
+	text-align: center;
+}
+header h1 {
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-size: 34px;
+	color: #333;
+}
+header h5 {
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	font-size: 16px;
+	color: #444;
+}
+header span i {
+	font-size: 30px;
+	color: #fa3f73;
+}
+header span a {
+	text-decoration: none;
+	color: #fa3f73;
+}
+header span a:hover {
+	text-decoration: underline;
+	color: #fa3f73;
+}
+header ul li {
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 7px;
+}
+header ul li:last-child {
+	margin-right: 0;
+}
+header ul li a.fab {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	background-color: #fa3f73;
+	color: #fff;
+	font-size: 12px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	text-decoration: none;
+}
+.wrapper-inside {
+	padding: 75px 50px 30px;
+}
+.left {
+	width: 33.33%;
+	float: left;
+	padding-right: 15px;
+	position: relative;
+}
+.middle {
+	width: 33.33%;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+}
+.right {
+	width: 33.33%;
+	float: left;
+	padding-left: 15px;
+}
+.middle:after {
+	content: "";
+	position: absolute;
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	left: 100%;
+	top: 0;
+	margin-left: -4px;
+	background-color: #fa3f73;
+}
+.middle:after {
+	left: 0;
+	top: 100%;
+	margin-top: -10px;
+}
+.middle:before {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 2px;
+	left: 0;
+	top: 0;
+	background-color: #fa3f73;
+}
+.exp-box:before {
+	content: "";
+	position: absolute;
+	height: 10px;
+	width: 10px;
+	top: 0;
+	left: 0;
+	margin-left: -4px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	background-color: #fa3f73;
+}
+.content-box.about div.content {
+	text-align: justify;
+}
+.content-box {
+	margin-bottom: 35px;
+}
+.content-box:last-child {
+	margin-bottom: 0;
+}
+.content-box .title {
+	margin-bottom: 15px;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fa3f73;
+	letter-spacing: 1px;
+}
+.content-box .content {
+	color: #555;
+}
+.history-list li {
+	width: 100%;
+	float: left;
+	margin-bottom: 25px;
+}
+.history-list li:last-child {
+	margin-bottom: 0;
+}
+.history-list li h4,
+.history-list li i,
+.history-list li span,
+.history-list li div {
+	width: 100%;
+	float: left;
+}
+.history-list li h4 {
+	margin-bottom: 2px;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	color: #444;
+}
+.history-list li i {
+	margin-bottom: 8px;
+	text-transform: uppercase;
+	color: #555;
+}
+.history-list li span {
+	text-transform: capitalize;
+	font-weight: 700;
+	color: #555;
+}
+.history-list li div {
+	text-align: justify;
+	color: #555;
+}
+.skills-list li {
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+}
+.skills-list li:last-child {
+	margin-bottom: 0;
+}
+.skills-list li>span,
+.skills-list li div {
+	width: 100%;
+	float: left;
+}
+.skills-list li>span {
+	margin-bottom: 2px;
+}
+.skills-list li div {
+	color: #999;
+}
+.skills-list li div.rate-1 span:nth-child(1) {
+	color: #fa3f73;
+}
+
+.skills-list li div.rate-2 span:nth-child(1) {
+	color: #fa3f73;
+}
+.skills-list li div.rate-2 span:nth-child(2) {
+	color: #fa3f73;
+}
+
+.skills-list li div.rate-3 span:nth-child(1) {
+	color: #fa3f73;
+}
+.skills-list li div.rate-3 span:nth-child(2) {
+	color: #fa3f73;
+}
+.skills-list li div.rate-3 span:nth-child(3) {
+	color: #fa3f73;
+}
+
+.skills-list li div.rate-4 span {
+	color: #fa3f73;
+}
+.skills-list li div.rate-4 span:nth-child(5) {
+	color: #999;
+}
+
+.skills-list li div.rate-5 span {
+	color: #fa3f73;
+}
+.skills-list li div span i {
+	float: left;
+	display: inline;
+}
+.skills-list li div span i:before {
+	content: "\f101";
+}
+.contact-list li {
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+	padding-left: 30px;
+	position: relative;
+}
+.contact-list li:last-child {
+	margin-bottom: 0;
+}
+.contact-list li i {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 0;
+	top: 0;
+	text-align: center;
+	line-height: 20px;
+	background-color: #fa3f73;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	color: #fff;
+	font-size: 12px;
+}
+.extra span {
+	margin-bottom: 5px;
+	color: #fa3f73;
+}
+@media screen and (max-width: 1024px) {
+	main {
+		width: 100%;
+		margin: 0;
+	}
+	.wrapper {
+		margin: 0;
+		border-radius: 0;
+		-webkit-border-radius: 0;
+		box-shadow: 0;
+		-webkit-box-shadow: 0;
+	}
+}
+@media screen and (max-width: 768px) {
+	.wrapper {
+		min-height: auto;
+	}
+	header {
+		margin-top: 70px;
+	}
+	.wrapper-inside {
+		padding: 60px 20px 30px;
+	}
+	.left {
+		width: 100%;
+		margin-bottom: 35px;
+	}
+	.middle {
+		width: 50%;
+		padding-right: 20px;
+	}
+	.right {
+		width: 50%;
+		padding-left: 20px;
+	}
+	.left:before {
+		display: none;
+	}
+	.skills-list li div span i {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 680px) {
+	.wrapper-inside {
+		padding: 60px 15px 30px;
+	}
+	.middle {
+		width: 100%;
+		margin-bottom: 35px;
+	}
+	.right {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 480px) {
+	header {
+		margin-top: 50px;
+	}
+	.skills-list li div span i {
+		font-size: 14px;
+	}
+}
