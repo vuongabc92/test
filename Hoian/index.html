@@ -7,12 +7,6 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/all.css" >
 	<link rel="stylesheet" href="css/style.css" >
-	<style type="text/css">
-		header .header-inside:after {
-			background-image: url('images/header-corner.png');
-		}
-	</style>
-	
 </head>
 <body>
 	<main>
@@ -140,25 +134,5 @@
 			</div>
 		</div>
 	</main>
-	<script>
-	
-	function impretty () {
-		var left   = document.getElementById('left');
-		var right  = document.getElementById('right');
-		var leftH  = left.clientHeight;
-		var rightH = right.clientHeight;
-		
-		if (leftH < rightH && window.innerWidth > 680) {
-			left.style.height = rightH + 'px';
-		}
-	}
-	
-	window.addEventListener( 'resize', impretty, false );
-	
-	window.onload = function(){
-		
-		impretty();
-	};
-	</script>
 </body>
 </html>
